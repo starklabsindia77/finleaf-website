@@ -4,7 +4,7 @@ import { MenuIcon } from "@heroicons/react/outline";
 function HeaderOptions() {
   return (
     <div className="flex w-full text-gray-700">
-      <div className="flex space-x-6">
+      <div className="flex space-x-10">
         <HeaderOption title="About Us" Selected />
         <HeaderOption Icon={ChevronDownIcon} title="Services" />
         <HeaderOption Icon={ChevronDownIcon} title="Guide" />
