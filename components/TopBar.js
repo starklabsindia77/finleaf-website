@@ -2,7 +2,7 @@ import { PhoneIcon, MailIcon } from "@heroicons/react/outline";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
-import LinkedInIcon from "@material-ui/icons/Linkedin";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 function TopBar() {
   return (
     <header className="pl-6 pr-6 w-full top-0 mt-3 bg-white justify-between hidden sm:inline-flex">
