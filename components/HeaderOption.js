@@ -9,7 +9,11 @@ function HeaderOption({ Icon, title, Selected }) {
       }`}
     >
       <p className="hidden md:inline-flex sm:hidden">{title}</p>
-      <Icon className="h-4 hidden md:inline-flex sm:hidden" />
+      {Icon ? (
+        <Icon
+          className={`h-4 hidden ${Icon && "text-gray-500 md:inline-flex"}`}
+        />
+      ) : null}
     </div>
   );
 }
