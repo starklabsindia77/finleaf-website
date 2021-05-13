@@ -13,7 +13,7 @@ function Header() {
             height={40}
             width={120}
             onClick={() => router.push("/")}
-            className="cursor-pointer "
+            className="cursor-pointer"
           />
         </div>
         {/* HeaderOptions */}
