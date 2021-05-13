@@ -8,8 +8,8 @@ function HeaderOption({ Icon, title, Selected }) {
         Selected && "text-blue-500 border-blue-500"
       }`}
     >
-      <p className="hidden sm:inline-flex">{title}</p>
-      <Icon className="h-4 hidden sm:inline-flex" />
+      <p className="hidden md:inline-flex sm:hidden">{title}</p>
+      <Icon className="h-4 hidden md:inline-flex sm:hidden" />
     </div>
   );
 }

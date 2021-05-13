@@ -1,6 +1,6 @@
 import HeaderOption from "./HeaderOption";
 import { ChevronDownIcon } from "@heroicons/react/outline";
-
+import { MenuIcon } from "@heroicons/react/outline";
 function HeaderOptions() {
   return (
     <div className="flex w-full text-gray-700">
@@ -10,6 +10,9 @@ function HeaderOptions() {
         <HeaderOption Icon={ChevronDownIcon} title="Guide" />
         <HeaderOption Icon={ChevronDownIcon} title="FAQ" />
         <HeaderOption Icon={ChevronDownIcon} title="Contact Us" />
+      </div>
+      <div className="flex lg:hidden md:hidden sm:flex">
+        <MenuIcon className="h-5 text-gray-500 border-gray-500 hover:text-blue-500 hover:border-blue-500" />
       </div>
     </div>
   );
