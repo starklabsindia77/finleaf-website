@@ -6,7 +6,7 @@ function Header() {
   return (
     <div>
       <TopBar />
-      <header className="flex w-full top-0 bg-white justify-between p-6">
+      <nav className="flex w-full flex-wrap top-0 bg-green-400 justify-between p-6">
         <div className="flex items-center">
           <Image
             src="https://www.google.kz/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"
@@ -20,7 +20,7 @@ function Header() {
         <div className="flex items-center">
           <HeaderOptions />
         </div>
-      </header>
+      </nav>
     </div>
   );
 }

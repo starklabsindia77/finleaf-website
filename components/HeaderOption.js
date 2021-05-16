@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
+import Link from "next/link";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -20,16 +21,24 @@ function HeaderOption({ Icon, title, Selected }) {
           >
             {Icon ? (
               <Menu.Button className="inline-flex items-center border-white">
-                <p className="hidden md:inline-flex sm:hidden">{title}</p>
+                <Link href="/">
+                  <a className="lg:inline-flex lg:w-auto w-full rounded items-center justify-center">
+                    {title}
+                  </a>
+                </Link>
                 <Icon
                   className={`h-4 hidden ${
-                    Icon && "text-gray-500 md:inline-flex"
+                    Icon && "text-gray-500 md:inline-flex pl-1"
                   }`}
                   aria-hidden="true"
                 />
               </Menu.Button>
             ) : (
-              <p className="hidden md:inline-flex sm:hidden">{title}</p>
+              <Link href="/">
+                <a className="lg:inline-flex lg:w-auto w-full rounded items-center justify-center">
+                  {title}
+                </a>
+              </Link>
             )}
           </div>
 
